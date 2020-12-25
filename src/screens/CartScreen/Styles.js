@@ -1,0 +1,113 @@
+import { StyleSheet } from 'react-native'
+import theme from "../../constants/theme";
+
+const { COLORS, SIZES, FONTS } = theme;
+
+export default StyleSheet.create({
+    container:{
+        flexDirection:'column',
+        flex:1,
+        backgroundColor:COLORS.white
+    },
+    itemContainer:{
+        flex:1,
+        padding:20,
+        paddingBottom:0
+    },
+    itemCard:{
+        width:'99%',
+        marginVertical:SIZES.margin/2,
+        elevation:0,
+        alignSelf:'center',
+        borderRadius:SIZES.radius,
+        borderWidth:1,
+        borderColor:COLORS.lightGray
+    },
+    itemImage:{
+        width:100,
+        height:90,
+        borderTopLeftRadius:SIZES.radius,
+        borderBottomLeftRadius:SIZES.radius,
+
+    },
+    textContainer:{
+    },
+    buttonContainer:{
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:COLORS.red,
+        borderRadius:SIZES.radius/2,
+        padding:3
+    },
+    bottomCard:{
+        width:'100%',
+        borderTopLeftRadius:30,
+        borderTopRightRadius:30,
+        padding:20,
+        backgroundColor:COLORS.white,
+        // borderWidth:1,
+        // borderColor:COLORS.lightGray
+    },
+    notesContainer:{
+        width:'100%',
+        justifyContent:'center',
+        marginVertical:SIZES.margin,
+        flexDirection:'column',
+    },
+    notesInput:{
+        flex:1,
+        borderRadius:SIZES.radius,
+        paddingLeft:SIZES.padding,
+        ...FONTS.body3,
+        color:COLORS.black,
+        height:50,
+        borderWidth:1,
+        borderColor:COLORS.lightGray,
+        
+    },
+    promoContainer:{
+        width:'100%',
+        justifyContent:'center',
+        alignItems:'center',
+        marginVertical:SIZES.margin,
+        flexDirection:'row',
+        borderRadius:SIZES.radius,
+        borderWidth:1,
+        borderColor:COLORS.lightGray,
+        paddingHorizontal:SIZES.padding
+    },
+    promoInput:{
+        flex:1,
+        borderRadius:SIZES.radius,
+        ...FONTS.body3,
+        color:COLORS.black,    
+    },
+    promoButton:{
+        width:120,
+        backgroundColor:COLORS.red,
+        borderRadius:SIZES.radius,
+        color:COLORS.white,
+        justifyContent:'center',
+        alignItems:'center',
+        padding:SIZES.padding/1.5
+    },
+    promoButtonText:{
+        ...FONTS.h3,
+        color:COLORS.red
+    },
+    priceRow:{
+        justifyContent:'space-between',
+        alignItems:'center',
+        flexDirection:'row',
+        marginVertical:SIZES.margin/2
+    },
+    checkoutButton:{
+        backgroundColor:COLORS.red,
+        justifyContent:'center',
+        alignItems:'center',
+        width:'100%',
+        padding:15,
+        marginVertical:SIZES.margin/2,
+        borderRadius:SIZES.radius
+    }
+})

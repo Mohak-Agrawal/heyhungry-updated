@@ -1,0 +1,84 @@
+import { StyleSheet } from 'react-native'
+import { Card } from 'react-native-paper';
+import theme from "../../constants/theme";
+
+const { COLORS, SIZES, FONTS } = theme;
+
+export default StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor:COLORS.white
+    },
+    pageIndicator:{
+        flexDirection:'row',
+        width:'100%',
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    footer:{
+        width:'100%',
+        padding:20,
+        borderWidth:1,
+        borderColor:COLORS.lightGray,
+    },
+    Button:{
+        backgroundColor:COLORS.red,
+        justifyContent:'center',
+        alignItems:'center',
+        width:'100%',
+        padding:15,
+        borderRadius:SIZES.radius
+    },
+    row:{
+        width:'100%',
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between'
+    },
+    addContainer:{
+        flexDirection:'row',
+        alignItems:'center'
+    },
+    addressContainer:{
+        padding:SIZES.padding,
+        flexDirection:'column',
+        flex:1
+    },
+    addressCard:{
+        width:200,
+        height:150,
+        marginRight:SIZES.margin,
+        padding:SIZES.padding,
+        borderRadius:SIZES.radius,
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor:COLORS.white,
+        marginVertical:SIZES.margin/2,
+        borderColor:COLORS.lightGray
+    },
+    paymentCard:{
+        width:'100%',
+        paddingVertical:SIZES.padding,
+        paddingHorizontal:SIZES.padding/2,
+        borderRadius:SIZES.radius,
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        backgroundColor:COLORS.white,
+        marginVertical:SIZES.margin/2,
+        borderWidth:1,
+        borderColor:COLORS.lightGray
+    },
+    checkbox:{
+        borderRadius:50,
+    },
+    button:{
+        justifyContent:'center',
+        alignItems:'center',
+        width:'100%',
+        padding:15,
+        marginVertical:SIZES.margin/2,
+        borderRadius:SIZES.radius
+    }
+})
